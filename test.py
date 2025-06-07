@@ -1,20 +1,13 @@
-from pymongo import MongoClient
+import psycopg2
 import pandas as pd
 
-# Connect to MongoDB
-client = MongoClient("mongodb://localhost:27017/")
-collection = client["F1_Message_Context"]["message_context"]
+race_id = 540  # Replace with actual race_id
 
-# Load all unique (race_id, driver_id) from Mongo
-mongo_pairs = set((int(m["race_id"]), int(m["driver_id"])) for m in collection.find({}, {"race_id":1, "driver_id":1}))
-
-# Load all valid pairs from Postgres
-results = pd.read_csv('../data/postgres/results.csv')
-sql_pairs = set((int(row.raceId), int(row.driverId)) for i, row in results.iterrows())
-
-# Find inconsistencies
-missing_in_sql = mongo_pairs - sql_pairs
-missing_in_mongo = sql_pairs - mongo_pairs
-
-print("Pairs in Mongo but not in SQL:", missing_in_sql)
-print("Pairs in SQL but not in Mongo (should be fine):", missing_in_mongo)
+pg_conn = psycopg2.connect(
+    dbname='F1_Analysis', user='postgres', password='1234', host='localhost'
+)
+race = pd.read_sql('SELECT "raceId", "year", "name", "circuitId" FROM races WHERE "raceId" = %s', pg_conn, params=[race_id])
+if not race.empty:
+    print(f"Race: {race.iloc[0]['name']} ({race.iloc[0]['year']}), circuitId: {race.iloc[0]['circuitId']}")
+else:
+    print("Race not found.")
