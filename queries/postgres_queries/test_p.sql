@@ -1,0 +1,1 @@
+SELECT * FROM lap_times WHERE "raceId" = 845 AND "driverId" = 44;
