@@ -6,12 +6,14 @@ engine = create_engine('postgresql://postgres:1234@localhost:5432/F1_Analysis')
 
 # List of CSVs and table names
 csv_files = {
-    "drivers": "../data/postgres/drivers.csv",
-    "races": "../data/postgres/races.csv",
-    "results": "../data/postgres/results.csv",
-    "constructors": "../data/postgres/constructors.csv",
-    "pit_stops": "../data/postgres/pit_stops.csv",
-    "lap_times": "../data/postgres/lap_times.csv"
+    "drivers": "C:/F1_Project/data/postgres/drivers.csv",
+    "races": "C:/F1_Project/data/postgres/races.csv",
+    "results": "C:/F1_Project/data/postgres/results.csv",
+    "constructors": "C:/F1_Project/data/postgres/constructors.csv",
+    "pit_stops": "C:/F1_Project/data/postgres/pit_stops.csv",
+    "lap_times": "C:/F1_Project/data/postgres/lap_times.csv",
+    "status": "C:/F1_Project/data/postgres/status.csv",
+    "circuits": "C:/F1_Project/data/postgres/circuits.csv"
     # Add more as needed
 }
 

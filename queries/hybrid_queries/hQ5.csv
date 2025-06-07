@@ -1,0 +1,621 @@
+team,message_type,count
+Brabham,weather,13
+Brabham,penalty,5
+Brabham,strategy,31
+Brabham,alert,36
+Brabham,engine,34
+Brabham,info,20
+Lotus-Ford,engine,3
+Lotus-Ford,strategy,9
+Lotus-Ford,alert,5
+Lotus-Ford,info,3
+Lotus-Ford,weather,2
+Lotus-Ford,penalty,2
+Sauber,alert,35
+Sauber,engine,30
+Sauber,info,24
+Sauber,penalty,9
+Sauber,strategy,41
+Sauber,weather,19
+Sauber,retirement,2
+Arrows,engine,19
+Arrows,weather,8
+Arrows,penalty,7
+Arrows,strategy,21
+Arrows,info,15
+Arrows,alert,25
+Arrows,retirement,1
+Cooper-Climax,strategy,14
+Cooper-Climax,alert,9
+Cooper-Climax,info,3
+Cooper-Climax,penalty,3
+Cooper-Climax,engine,12
+Cooper-Climax,weather,3
+Jordan,strategy,22
+Jordan,engine,22
+Jordan,weather,11
+Jordan,info,20
+Jordan,alert,27
+Jordan,penalty,3
+Osella,strategy,10
+Osella,alert,14
+Osella,engine,20
+Osella,weather,4
+Osella,info,9
+Osella,penalty,1
+Force India,info,19
+Force India,strategy,19
+Force India,alert,16
+Force India,engine,21
+Force India,weather,7
+Force India,penalty,1
+Cooper-Maserati,alert,4
+Cooper-Maserati,info,6
+Cooper-Maserati,penalty,2
+Cooper-Maserati,strategy,6
+Cooper-Maserati,engine,6
+Cooper-Maserati,weather,3
+Aston Martin,alert,7
+Aston Martin,info,7
+Aston Martin,strategy,13
+Aston Martin,weather,4
+Aston Martin,penalty,3
+Aston Martin,engine,3
+Mercedes,alert,34
+Mercedes,penalty,6
+Mercedes,engine,34
+Mercedes,strategy,27
+Mercedes,info,16
+Mercedes,weather,11
+Minardi,strategy,37
+Minardi,engine,26
+Minardi,alert,35
+Minardi,weather,10
+Minardi,info,23
+Minardi,penalty,6
+Ferrari,info,62
+Ferrari,alert,119
+Ferrari,strategy,100
+Ferrari,weather,47
+Ferrari,penalty,27
+Ferrari,engine,102
+Toleman,alert,9
+Toleman,engine,4
+Toleman,info,5
+Toleman,retirement,1
+Toleman,weather,2
+Toleman,penalty,2
+Toleman,strategy,2
+Team Lotus,alert,50
+Team Lotus,penalty,10
+Team Lotus,weather,16
+Team Lotus,engine,42
+Team Lotus,info,31
+Team Lotus,strategy,40
+Leyton House,alert,5
+Leyton House,engine,5
+Leyton House,strategy,2
+Leyton House,info,2
+Leyton House,weather,1
+Williams,alert,95
+Williams,strategy,63
+Williams,weather,22
+Williams,info,42
+Williams,engine,75
+Williams,penalty,11
+McLaren,engine,69
+McLaren,alert,93
+McLaren,strategy,96
+McLaren,info,71
+McLaren,penalty,11
+McLaren,weather,26
+McLaren,retirement,1
+Talbot-Lago,info,6
+Talbot-Lago,engine,4
+Talbot-Lago,strategy,4
+Talbot-Lago,alert,7
+Talbot-Lago,penalty,1
+Shadow,info,13
+Shadow,strategy,4
+Shadow,engine,8
+Shadow,alert,7
+Shadow,weather,2
+Shadow,penalty,2
+Surtees,info,7
+Surtees,engine,12
+Surtees,alert,17
+Surtees,strategy,9
+Surtees,weather,4
+Surtees,penalty,2
+Red Bull,info,25
+Red Bull,alert,46
+Red Bull,penalty,7
+Red Bull,strategy,42
+Red Bull,engine,40
+Red Bull,weather,10
+Ensign,strategy,9
+Ensign,alert,7
+Ensign,engine,9
+Ensign,info,3
+Ensign,penalty,1
+Ensign,weather,1
+Brawn,strategy,1
+Brawn,info,2
+Brawn,alert,2
+Brawn,engine,2
+LDS,engine,2
+LDS,info,1
+March,info,34
+March,strategy,23
+March,weather,12
+March,engine,26
+March,alert,21
+March,penalty,3
+Toro Rosso,alert,25
+Toro Rosso,strategy,22
+Toro Rosso,info,20
+Toro Rosso,weather,9
+Toro Rosso,engine,13
+Toro Rosso,penalty,5
+Kurtis Kraft,strategy,11
+Kurtis Kraft,alert,8
+Kurtis Kraft,penalty,6
+Kurtis Kraft,engine,10
+Kurtis Kraft,info,8
+Kurtis Kraft,weather,3
+Fondmetal,info,2
+Fondmetal,weather,2
+Fondmetal,engine,1
+Fondmetal,strategy,1
+Euro Brun,weather,6
+Euro Brun,alert,2
+Euro Brun,strategy,2
+Euro Brun,engine,1
+Connaught,strategy,3
+Connaught,engine,6
+Connaught,alert,2
+Connaught,retirement,1
+Connaught,penalty,1
+Connaught,weather,2
+Connaught,info,1
+Tyrrell,alert,38
+Tyrrell,engine,35
+Tyrrell,weather,16
+Tyrrell,strategy,33
+Tyrrell,info,25
+Tyrrell,penalty,8
+Tyrrell,retirement,1
+BRM,alert,22
+BRM,weather,6
+BRM,penalty,6
+BRM,strategy,24
+BRM,info,14
+BRM,engine,18
+Phillips,strategy,1
+Wolf,alert,4
+Wolf,engine,5
+Wolf,penalty,1
+Wolf,strategy,2
+Wolf,info,2
+Wolf,weather,1
+Renault,engine,49
+Renault,info,29
+Renault,strategy,35
+Renault,alert,36
+Renault,penalty,2
+Renault,weather,11
+Renault,retirement,1
+Marussia,alert,5
+Marussia,strategy,6
+Marussia,info,5
+Marussia,engine,3
+Marussia,weather,2
+Ligier,info,22
+Ligier,strategy,20
+Ligier,engine,34
+Ligier,alert,22
+Ligier,penalty,4
+Ligier,weather,6
+Merzario,strategy,2
+Merzario,alert,1
+Merzario,info,1
+RAM,alert,1
+RAM,strategy,1
+RAM,info,3
+RAM,penalty,1
+RAM,engine,1
+Jaguar,strategy,8
+Jaguar,engine,4
+Jaguar,alert,6
+Jaguar,weather,3
+Jaguar,info,7
+Jaguar,penalty,1
+Zakspeed,weather,4
+Zakspeed,strategy,4
+Zakspeed,info,3
+Zakspeed,penalty,2
+Zakspeed,engine,1
+Zakspeed,alert,8
+HRT,alert,5
+HRT,engine,5
+HRT,weather,3
+HRT,strategy,4
+Forti,weather,2
+Forti,engine,6
+Forti,alert,3
+Forti,info,1
+Forti,strategy,1
+Alpine F1 Team,engine,7
+Alpine F1 Team,weather,2
+Alpine F1 Team,alert,8
+Alpine F1 Team,strategy,5
+Alpine F1 Team,info,7
+Alpine F1 Team,penalty,2
+Brabham-BRM,weather,1
+Brabham-BRM,strategy,3
+Brabham-BRM,engine,3
+Brabham-BRM,alert,2
+Brabham-BRM,info,1
+Brabham-BRM,penalty,1
+Fittipaldi,alert,10
+Fittipaldi,strategy,4
+Fittipaldi,info,5
+Fittipaldi,weather,3
+Fittipaldi,engine,7
+Fittipaldi,penalty,1
+Alfa Romeo,info,15
+Alfa Romeo,alert,21
+Alfa Romeo,engine,20
+Alfa Romeo,strategy,17
+Alfa Romeo,weather,6
+Alfa Romeo,penalty,2
+Alfa Romeo,retirement,1
+Lotus-Climax,alert,14
+Lotus-Climax,engine,7
+Lotus-Climax,strategy,10
+Lotus-Climax,info,4
+Lotus-Climax,retirement,1
+Lotus-Climax,penalty,5
+Lotus-Climax,weather,2
+Toyota,alert,12
+Toyota,strategy,16
+Toyota,info,5
+Toyota,engine,9
+Toyota,weather,2
+Toyota,penalty,1
+AlphaTauri,engine,8
+AlphaTauri,strategy,5
+AlphaTauri,alert,9
+AlphaTauri,penalty,2
+AlphaTauri,info,3
+AlphaTauri,weather,1
+Onyx,strategy,5
+Onyx,alert,8
+Onyx,engine,1
+Onyx,info,2
+Brabham-Climax,alert,4
+Brabham-Climax,info,1
+Brabham-Climax,strategy,3
+Brabham-Climax,penalty,1
+Brabham-Climax,engine,1
+Matra-Ford,alert,5
+Matra-Ford,info,2
+Larrousse,alert,10
+Larrousse,engine,13
+Larrousse,strategy,9
+Larrousse,penalty,1
+Larrousse,info,3
+Larrousse,weather,1
+Cooper,engine,2
+Cooper,alert,3
+Cooper,info,2
+Cooper,strategy,3
+Cooper,weather,1
+Gordini,strategy,2
+Gordini,info,4
+Gordini,engine,2
+Gordini,alert,3
+Gordini,weather,1
+Iso Marlboro,penalty,2
+Iso Marlboro,info,2
+Iso Marlboro,engine,1
+Iso Marlboro,alert,1
+Lola,info,3
+Lola,strategy,4
+Lola,alert,11
+Lola,engine,11
+AGS,weather,1
+AGS,alert,4
+AGS,strategy,6
+AGS,engine,4
+AGS,info,2
+AGS,penalty,1
+Virgin,strategy,7
+Virgin,info,3
+Virgin,engine,3
+Virgin,weather,1
+Virgin,alert,1
+Maserati,retirement,2
+Maserati,alert,22
+Maserati,info,6
+Maserati,strategy,16
+Maserati,weather,6
+Maserati,penalty,1
+Maserati,engine,12
+Prost,weather,2
+Prost,engine,7
+Prost,strategy,10
+Prost,alert,7
+Prost,penalty,1
+Prost,info,8
+Lotus F1,weather,2
+Lotus F1,alert,6
+Lotus F1,engine,5
+Lotus F1,strategy,6
+Lotus F1,info,5
+Lotus F1,penalty,1
+Pacific,alert,4
+Pacific,strategy,3
+Pacific,engine,2
+Pacific,info,1
+BRP,strategy,2
+De Tomaso,engine,2
+De Tomaso,alert,1
+Lotus-BRM,alert,8
+Lotus-BRM,strategy,8
+Lotus-BRM,info,4
+Lotus-BRM,engine,5
+Lotus-BRM,penalty,1
+Brabham-Alfa Romeo,alert,4
+Brabham-Alfa Romeo,strategy,3
+Brabham-Alfa Romeo,engine,2
+Brabham-Alfa Romeo,penalty,1
+Brabham-Alfa Romeo,weather,1
+Eagle-Weslake,info,1
+Simca,alert,5
+Simca,engine,1
+Simca,strategy,2
+Simca,weather,1
+Simca,info,1
+Veritas,strategy,2
+Veritas,alert,1
+Honda,strategy,7
+Honda,alert,6
+Honda,info,2
+Honda,engine,1
+Haas F1 Team,engine,15
+Haas F1 Team,alert,22
+Haas F1 Team,info,13
+Haas F1 Team,strategy,16
+Haas F1 Team,penalty,9
+Haas F1 Team,weather,3
+Dallara,alert,8
+Dallara,engine,5
+Dallara,strategy,6
+Dallara,info,5
+Dallara,penalty,1
+Kuzma,alert,1
+Kuzma,strategy,2
+Kuzma,engine,2
+Footwork,alert,6
+Footwork,info,5
+Footwork,penalty,2
+Footwork,engine,4
+Footwork,strategy,6
+Footwork,weather,1
+ERA,engine,1
+ERA,alert,2
+Schroeder,alert,1
+Schroeder,info,2
+Schroeder,strategy,1
+Schroeder,weather,1
+Schroeder,engine,1
+Cooper-BRM,strategy,3
+Cooper-BRM,alert,3
+Cooper-BRM,engine,1
+Rial,strategy,1
+Rial,alert,3
+Rial,weather,2
+Rial,engine,3
+Brabham-Ford,strategy,4
+Brabham-Ford,weather,1
+Brabham-Ford,engine,3
+Brabham-Ford,info,1
+Benetton,strategy,20
+Benetton,engine,21
+Benetton,weather,9
+Benetton,alert,31
+Benetton,info,15
+Racing Point,weather,1
+Racing Point,alert,4
+Racing Point,info,3
+Racing Point,strategy,2
+Racing Point,engine,1
+March-Alfa Romeo,alert,1
+March-Alfa Romeo,strategy,1
+McLaren-Alfa Romeo,alert,2
+McLaren-Alfa Romeo,info,1
+McLaren-Alfa Romeo,strategy,1
+Super Aguri,strategy,4
+Super Aguri,weather,1
+Super Aguri,info,8
+Super Aguri,alert,5
+Super Aguri,penalty,1
+Super Aguri,engine,2
+BMW Sauber,alert,7
+BMW Sauber,weather,6
+BMW Sauber,info,4
+BMW Sauber,strategy,4
+BMW Sauber,engine,4
+Lotus,info,3
+Lotus,engine,4
+Lotus,penalty,2
+Lotus,strategy,2
+Lotus,alert,4
+Matra,strategy,1
+Matra,penalty,3
+Matra,alert,4
+Matra,engine,3
+Matra,info,2
+Matra,weather,2
+RB F1 Team,strategy,2
+RB F1 Team,engine,1
+MF1,engine,1
+MF1,alert,3
+MF1,strategy,2
+MF1,info,1
+Coloni,alert,7
+Coloni,info,3
+Coloni,engine,6
+Coloni,weather,2
+Coloni,strategy,1
+Epperly,engine,3
+Epperly,weather,2
+Epperly,strategy,1
+Life,engine,1
+Life,weather,1
+Life,strategy,2
+Life,alert,1
+Caterham,engine,3
+Caterham,alert,4
+Caterham,strategy,3
+Caterham,weather,5
+Caterham,info,4
+Caterham,penalty,1
+Watson,engine,1
+Watson,strategy,1
+Alta,alert,1
+Alta,strategy,1
+Alta,engine,1
+Vanwall,weather,2
+Vanwall,info,2
+Vanwall,alert,3
+Vanwall,penalty,2
+Vanwall,engine,4
+Vanwall,strategy,1
+McLaren-Ford,engine,4
+McLaren-Ford,info,2
+McLaren-Ford,weather,2
+McLaren-Ford,strategy,5
+Cooper-Ferrari,engine,1
+Cooper-Ferrari,info,1
+Lambo,info,7
+Lambo,strategy,2
+Lambo,engine,2
+ATS,alert,7
+ATS,strategy,7
+ATS,info,6
+ATS,engine,6
+ATS,weather,3
+Penske,engine,3
+Penske,penalty,1
+Penske,strategy,3
+Penske,info,2
+Penske,alert,2
+Lesovsky,info,1
+Theodore,alert,1
+Theodore,info,2
+Theodore,penalty,1
+Theodore,engine,3
+Theodore,strategy,3
+Theodore,weather,1
+Stevens,alert,1
+Stevens,engine,1
+Brabham-Repco,engine,4
+Brabham-Repco,retirement,1
+Brabham-Repco,strategy,5
+Brabham-Repco,alert,2
+Brabham-Repco,weather,1
+HWM,alert,2
+HWM,penalty,1
+HWM,info,3
+HWM,strategy,1
+HWM,engine,1
+Parnelli,strategy,1
+Parnelli,alert,1
+Parnelli,engine,1
+Parnelli,info,1
+Martini,strategy,2
+Martini,alert,1
+BAR,engine,6
+BAR,strategy,10
+BAR,info,7
+BAR,alert,11
+BAR,penalty,1
+BAR,weather,2
+Manor Marussia,engine,2
+Manor Marussia,alert,3
+Manor Marussia,strategy,1
+Manor Marussia,info,2
+Manor Marussia,weather,2
+Manor Marussia,penalty,1
+Amon,info,1
+Shadow-Ford,strategy,2
+Shadow-Ford,alert,3
+Shadow-Ford,penalty,1
+Shadow-Ford,engine,2
+Shadow-Ford,weather,1
+Porsche,strategy,4
+Porsche,weather,2
+Porsche,info,4
+Porsche,alert,3
+Porsche,penalty,1
+Porsche,engine,2
+Hesketh,info,3
+Hesketh,weather,1
+Hesketh,engine,1
+Hesketh,penalty,2
+Hesketh,alert,1
+Hesketh,strategy,2
+Stewart,engine,3
+Stewart,info,2
+Stewart,strategy,4
+Stewart,penalty,1
+Stewart,alert,2
+Cooper-Ford,info,1
+Cooper-Ford,weather,1
+Spyker,engine,2
+Spyker,alert,3
+Spyker,strategy,2
+Spyker,weather,1
+Tec-Mec,engine,1
+Scirocco,weather,1
+LEC,alert,1
+Eagle-Climax,info,2
+Eagle-Climax,alert,1
+Emeryson,alert,2
+Emeryson,info,1
+Token,engine,1
+March-Ford,info,4
+March-Ford,strategy,4
+March-Ford,alert,2
+Adams,strategy,1
+Simtek,engine,3
+Simtek,alert,4
+Simtek,info,1
+Maki,alert,1
+Bellasi,engine,1
+Ferguson,strategy,1
+Dunn,strategy,1
+Fry,info,1
+Lyncar,weather,1
+Trojan,info,1
+BMW,strategy,1
+Andrea Moda,engine,2
+RE,info,1
+McLaren-Serenissima,alert,1
+Scarab,engine,1
+Behra-Porsche,alert,1
+Spirit,alert,3
+Spirit,info,1
+Spyker MF1,info,1
+Spyker MF1,strategy,1
+Kauhsen,strategy,1
+McGuire,engine,1
+Cooper-Castellotti,engine,1
+Bugatti,alert,1
+Tecno,strategy,1
+Lancia,info,1
+MBM,info,1
+Stebro,strategy,1
+Gilby,alert,1

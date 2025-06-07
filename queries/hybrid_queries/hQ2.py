@@ -1,32 +1,38 @@
 """
-Hybrid Query 2: All radio messages in the 3 laps after a pit stop (for a driver/race)
-
-- For a given driver (and optionally a specific race), find all their pit stops.
-- For each pit stop, fetch all MongoDB radio messages on laps lap+1, lap+2, lap+3.
+Query 2: Get all messages for drivers who retired due to engine failure (True Postgres+Mongo interop)
 """
-
 import pandas as pd
-from sqlalchemy import create_engine
+import psycopg2
 from pymongo import MongoClient
 
-engine = create_engine("postgresql://postgres:1234@localhost:5432/F1_Analysis")
+# Connect to Postgres
+pg_conn = psycopg2.connect(
+    dbname='F1_Analysis', user='postgres', password='1234', host='localhost'
+)
+status = pd.read_sql('SELECT "statusId", LOWER(status) as status FROM status', pg_conn)
+results = pd.read_sql('SELECT "raceId", "driverId", "statusId" FROM results', pg_conn)
+
+# Identify engine failure statusIds
+engine_status_ids = status[status['status'].str.contains('engine')]['statusId'].astype(str).tolist()
+engine_failures = set(
+    tuple(x)
+    for x in results[results['statusId'].astype(str).isin(engine_status_ids)][['raceId', 'driverId']].values
+)
+
+# Connect to MongoDB
 client = MongoClient("mongodb://localhost:27017/")
 collection = client["F1_Message_Context"]["message_context"]
 
-driver_id = 44
+engine_failure_msgs = []
+for (race_id, driver_id) in engine_failures:
+    msgs = collection.find({"race_id": int(race_id), "driver_id": int(driver_id)})
+    for msg in msgs:
+        engine_failure_msgs.append(msg)
 
-# --- 1. Get all pit stops for driver ---
-df = pd.read_sql("""
-    SELECT "raceId", stop, lap
-    FROM pit_stops
-    WHERE "driverId" = %s
-    ORDER BY "raceId", lap
-""", engine, params=(driver_id,))
-
-# --- 2. For each pit stop, get messages on laps lap+1, lap+2, lap+3 ---
-for _, row in df.iterrows():
-    race_id, pit_lap = int(row["raceId"]), int(row["lap"])
-    for lap in [pit_lap+1, pit_lap+2, pit_lap+3]:
-        msgs = list(collection.find({"race_id": race_id, "driver_id": driver_id, "lap": lap}))
-        for msg in msgs:
-            print(f"Race {race_id} Lap {lap}: {msg['message_text']} | Tags: {msg.get('tags', [])}")
+# Export results to CSV
+if engine_failure_msgs:
+    df = pd.DataFrame(engine_failure_msgs)
+    df.to_csv('hQ2.csv', index=False)
+    print("Exported to hQ2.csv!")
+else:
+    print("No matching messages found.")

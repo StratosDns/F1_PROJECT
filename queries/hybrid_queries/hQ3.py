@@ -1,37 +1,46 @@
 """
-Hybrid Query 3: Find the lap with the most radio messages for a driver in a race
+Query 3: Messages sent right after a pit stop
 
-- For a given driver and race, find which lap in MongoDB has the most messages.
-- Display the position of the driver on that lap (from Postgres).
+Purpose:
+For each pit stop (race_id, driver_id, lap), get all radio messages for the same driver/race
+on the next 2 laps (lap+1, lap+2). Export the result to a CSV for use in Tableau or further analysis.
+
+Result: List of messages sent immediately after pit stops (CSV output).
+
+Assumes:
+- pit_stops.csv in Postgres or CSV.
+- Radio messages in MongoDB.
+
+Dependencies: pandas, pymongo
 """
-
 import pandas as pd
-from sqlalchemy import create_engine
+import psycopg2
 from pymongo import MongoClient
-from collections import Counter
 
-engine = create_engine("postgresql://postgres:1234@localhost:5432/F1_Analysis")
+# Connect to Postgres
+pg_conn = psycopg2.connect(
+    dbname='F1_Analysis', user='postgres', password='1234', host='localhost'
+)
+pit_stops = pd.read_sql('SELECT "raceId", "driverId", lap FROM pit_stops', pg_conn)
+
+# Connect to MongoDB
 client = MongoClient("mongodb://localhost:27017/")
 collection = client["F1_Message_Context"]["message_context"]
 
-race_id = 165
-driver_id = 44
+post_pit_msgs = []
+for _, row in pit_stops.iterrows():
+    race_id = int(row['raceId'])
+    driver_id = int(row['driverId'])
+    pit_lap = int(row['lap'])
+    for lap in [pit_lap + 1, pit_lap + 2]:
+        msgs = collection.find({"race_id": race_id, "driver_id": driver_id, "lap": lap})
+        for msg in msgs:
+            post_pit_msgs.append(msg)
 
-# --- 1. Get all messages for race/driver ---
-msgs = list(collection.find({"race_id": race_id, "driver_id": driver_id}))
-lap_counts = Counter(msg['lap'] for msg in msgs)
-if not lap_counts:
-    print("No messages found.")
+# Export results to CSV
+if post_pit_msgs:
+    df = pd.DataFrame(post_pit_msgs)
+    df.to_csv('hQ3.csv', index=False)
+    print("Exported to hQ3.csv!")
 else:
-    lap_most = lap_counts.most_common(1)[0][0]
-    print(f"Lap with most messages: {lap_most}")
-
-    # --- 2. Get driver's position on that lap ---
-    engine = create_engine("postgresql://postgres:1234@localhost:5432/F1_Analysis")
-    sql = 'SELECT position FROM lap_times WHERE "raceId" = %s AND "driverId" = %s AND lap = %s'
-    pos = pd.read_sql(sql, engine, params=(race_id, driver_id, lap_most))
-    print(pos)
-
-    # --- 3. Print messages from that lap ---
-    for msg in filter(lambda m: m['lap'] == lap_most, msgs):
-        print(f"Lap {lap_most}: {msg['message_text']} | Tags: {msg.get('tags', [])}")
+    print("No matching messages found.")

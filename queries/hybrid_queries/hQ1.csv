@@ -1,0 +1,12 @@
+_id,message_id,race_id,driver_id,mechanic_name,timestamp,lap,message_text,message_type,tags
+68446db7621bbd729b514236,msg597,1111,857,Emily Adams,2025-06-08T08:52:00Z,63,"Switch to wets, rain intensifying.",weather,"['pitstop', 'wets', 'weather']"
+68446db7621bbd729b514275,msg660,911,154,Ella Martin,2025-06-08T10:58:00Z,13,"Box for softs, push now.",strategy,"['pitstop', 'softs']"
+68446db7621bbd729b514277,msg662,929,3,Olivia Scott,2025-06-08T11:02:00Z,34,Box now for mediums.,strategy,"['pitstop', 'mediums', 'first_stop']"
+68446db7621bbd729b5146fb,msg1818,912,8,Daniel Lee,2025-06-10T01:34:00Z,20,"Box for softs, push now.",strategy,"['pitstop', 'softs']"
+68446db7621bbd729b514964,msg2435,999,843,Mike Brown,2025-06-10T22:08:00Z,28,Box this lap for softs.,strategy,"['pitstop', 'softs', 'first_stop']"
+68446db7621bbd729b514a87,msg2726,967,825,Sophie King,2025-06-11T07:50:00Z,41,Box for hards.,strategy,"['pitstop', 'hards', 'first_stop']"
+68446db7621bbd729b514b98,msg2999,1074,807,John Smith,2025-06-11T16:56:00Z,37,"Pit for softs, final stint.",strategy,"['pitstop', 'softs', 'final_stint']"
+68446db7621bbd729b514bf1,msg3088,910,16,John Smith,2025-06-11T19:54:00Z,8,Box now for mediums.,strategy,"['pitstop', 'mediums', 'first_stop']"
+68446db7621bbd729b5151a7,msg4550,883,154,Benjamin Allen,2025-06-13T20:38:00Z,42,Box for hards.,strategy,"['pitstop', 'hards', 'first_stop']"
+68446db7621bbd729b515214,msg4659,896,821,Chloe Harris,2025-06-14T00:16:00Z,47,"Switch to wets, rain intensifying.",weather,"['pitstop', 'wets', 'weather']"
+68446db7621bbd729b515221,msg4672,850,816,Nathan Lewis,2025-06-14T00:42:00Z,49,"Pit for hards, tyres at limit.",strategy,"['pitstop', 'hards', 'tyre_degradation']"
