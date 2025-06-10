@@ -10,7 +10,7 @@ from collections import defaultdict, Counter
 pg_conn = psycopg2.connect(
     dbname='F1_Analysis', user='postgres', password='1234', host='localhost'
 )
-
+          
 # Get raceId, circuitId for all races
 races = pd.read_sql('SELECT "raceId", "circuitId" FROM races', pg_conn)
 
