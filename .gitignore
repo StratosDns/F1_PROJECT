@@ -187,7 +187,7 @@ cython_debug/
 .pypirc
 
 /f1
-Presentation_TH20580.pptx
+*.pptx
 /f1_fonts
 
 # Cursor
