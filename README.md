@@ -28,7 +28,7 @@ This project demonstrates a **hybrid analytics pipeline** for Formula 1 (F1) dat
 ├── output/                 # Exported CSVs and Tableau sheets
 ├── F1_2page_abstract.pdf   # Extended abstract describing the methodology
 ├── queries/                # Directory storing the hybrid queries that performed the interoperation between the 2 systems
-├── f1/                     # Local Pythin venv that was added informatively in the repo
+├── f1_fonts/               # Fonts used for the presentation
 ├── requirements.txt        # Python dependencies
 └── README.md               # This file
 ```
@@ -86,6 +86,7 @@ Key findings and visualizations are documented in the [F1_2page_abstract.pdf](F1
 ## References
 
 - Kaggle F1 Dataset: [Formula 1 World Championship 1950-2020](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020)
+- F1 fonts used: [font link](https://fontforfree.com/formula-1-font/)
 
 
 **Contact:**  
