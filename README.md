@@ -1,6 +1,5 @@
 # Hybrid Analytics of Formula 1 Driver-Mechanic Radio Messages
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Overview
 
