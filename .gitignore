@@ -187,8 +187,7 @@ cython_debug/
 .pypirc
 
 /f1
-*.pptx
-/f1_fonts
+
 
 # Cursor
 #  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
